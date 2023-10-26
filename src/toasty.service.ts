@@ -32,10 +32,10 @@ export class ToastData {
   showClose: boolean;
   type: string;
   theme: string;
-  timeout: number;
-  onAdd: Function;
-  onRemove: Function;
-  onClick: Function;
+  timeout: null | number;
+  onAdd:  null | Function;
+  onRemove: null | Function;
+  onClick: null | Function;
 }
 
 /**

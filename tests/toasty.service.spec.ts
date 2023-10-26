@@ -79,7 +79,7 @@ describe('ToastyService', () => {
                     expect(toast).not.toBeNull();
                     expect(toast.id).not.toBeNull();
                     expect(toast.title).toBe(options.title);
-                    expect(toast.msg).toBe(options.msg);
+                    expect(toast.msg).toBe(options.msg!);
                     expect(toast.showClose).toBe(true);
                     expect(toast.type).toBe('toasty-type-default');
                     expect(toast.theme).toBe('toasty-theme-default');
@@ -100,7 +100,7 @@ describe('ToastyService', () => {
                         expect(toast).toBeDefined();
                         expect(toast.id).not.toBeNull();
                         expect(toast.title).toBe(options.title);
-                        expect(toast.msg).toBe(options.msg);
+                        expect(toast.msg).toBe(options.msg!);
                         expect(toast.showClose).toBe(true);
                         expect(toast.type).toBe('toasty-type-default');
                         expect(toast.theme).toBe('toasty-theme-default');
@@ -227,7 +227,7 @@ describe('ToastyService', () => {
                     expect(toast).not.toBeNull();
                     expect(toast.id).not.toBeNull();
                     expect(toast.title).toBe(options.title);
-                    expect(toast.msg).toBe(options.msg);
+                    expect(toast.msg).toBe(options.msg!);
                     expect(toast.showClose).toBe(true);
                     expect(toast.type).toBe('toasty-type-default');
                     expect(toast.theme).toBe('toasty-theme-material');
@@ -251,7 +251,7 @@ describe('ToastyService', () => {
                     expect(toast).not.toBeNull();
                     expect(toast.id).not.toBeNull();
                     expect(toast.title).toBe(options.title);
-                    expect(toast.msg).toBe(options.msg);
+                    expect(toast.msg).toBe(options.msg!);
                     expect(toast.showClose).toBe(true);
                     expect(toast.type).toBe('toasty-type-default');
                     expect(toast.theme).toBe('toasty-theme-bootstrap');
